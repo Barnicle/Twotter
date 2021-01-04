@@ -1,58 +1,28 @@
 <template>
   <div id="app">
-    {{fullName}}
-    <span>Followers: {{followers}}</span>
-    <button v-on:click="followUser">Follow</button>
+  <UserProfile/>
   </div>
 </template>
 
 <script>
 
+import UserProfile from "@/components/UserProfile";
 export default {
   name:'App',
-  data(){
-    return {
-      followers: 0,
-      user: {
-        id: 1,
-        userName: 'Barnicle',
-        firstName: 'Eugene',
-        lastName: 'Galimov',
-        email: 'egalimov95@gmail.com',
-        isAdmin: true
-      }
-    }
-  },
-  watch: {
-    followers(newFollowerCount, oldFollowerCount) {
-      if(oldFollowerCount < newFollowerCount) {
-        console.log(`${this.user.userName} gain follower!`)
-      }
-    }
-  },
-  computed: {
-    fullName() {
-      return `${this.user.firstName} ${this.user.lastName}`
-    }
-  },
-  methods: {
-    followUser() {
-      this.followers++;
-    }
-  },
-  mounted() {
-    // this.followUser()
-  }
+  components: {UserProfile},
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  background-color: #F3F5FA;
   display: flex;
   flex-flow: column;
+}
+* {
+  margin: 0;
 }
 </style>
