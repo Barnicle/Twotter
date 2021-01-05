@@ -12,7 +12,8 @@ export default {
   components: {UserProfile},
 }
 </script>
-<style>
+
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,8 +22,5 @@ export default {
   background-color: #F3F5FA;
   display: flex;
   flex-flow: column;
-}
-* {
-  margin: 0;
 }
 </style>
