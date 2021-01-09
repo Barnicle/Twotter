@@ -1,10 +1,10 @@
 export const users = [
   {
     "id": 1,
-    "username": "_MitchellRomney",
-    "firstName": "Mitchell",
-    "lastName": "Romney",
-    "email": "mitchellromney@theearthissquare.com",
+    "username": "Barnic1e",
+    "firstName": "Eugene",
+    "lastName": "Galimov",
+    "email": "egalimov95@gmail.com",
     "isAdmin": true,
     "twoots": [
       { "id": 1, "content": "Twotter is Amazing!" },
